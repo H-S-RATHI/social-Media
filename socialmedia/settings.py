@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'socialmedia.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgresql://my_database_c37v_user:8XW6b9zARcc0CgB4ze3qCQAmYJZs37tP@dpg-crnt9jl6l47c73akgf70-a/my_database_c37v')
+    'default': dj_database_url.config(default='postgresql://my_database_c37v_user:8XW6b9zARcc0CgB4ze3qCQAmYJZs37tP@dpg-crnt9jl6l47c73akgf70-a.oregon-postgres.render.com/my_database_c37v')
 }
 
 
