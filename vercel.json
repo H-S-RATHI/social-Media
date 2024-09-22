@@ -1,13 +1,19 @@
 {
-    "builds": [{
+    "version": 2,
+    "builds": [
+      {
         "src": "socialmedia/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
+        "use": "@vercel/python"
+      }
+    ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "socialmedia/wsgi.py"
-        }
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "socialmedia/wsgi.py"
+      }
     ]
-}
+  }
